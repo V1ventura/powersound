@@ -69,7 +69,7 @@ button, a { letter-spacing: 0; }
 .whatsapp-float {
   position: fixed;
   right: 120px;  /* 50px mais para a esquerda */
-  bottom: 274px; /* 50px mais para cima */
+  bottom: 500px; /* 50px mais para cima */
   width: 58px;
   height: 58px;
   z-index: 9999;
