@@ -66,3 +66,35 @@ button, a { letter-spacing: 0; }
 @media (min-width:768px) { .md\:col-span-7 { grid-column: span 7; }.md\:col-span-5 { grid-column: span 5; }.md\:col-span-12 { grid-column: span 12; }.md\:col-span-4 { grid-column: span 4; }.md\:row-span-2 { grid-row: span 2; } }
 @media (max-width:767px) { .section-shell { padding: 4.5rem 0; }.hero-image { object-position: 40% center; transform: scale(1.1); }.hero-shade { background: linear-gradient(0deg,var(--background),color-mix(in oklab,var(--background) 35%,transparent) 75%); }.soundwave { width: 80%; opacity: .12; }.scroll-cue { display:none; }.portfolio-grid { grid-auto-rows: 310px; }.about-images { min-height: 470px; }.about-images img:first-child { height: 400px; }.about-images img:last-child { height: 210px; }.compare-after img { width: 100vw; }.feature-band>img { object-position: 62% center; }.feature-shade { background: linear-gradient(0deg,var(--background) 2%,color-mix(in oklab,var(--background) 78%,transparent) 60%,color-mix(in oklab,var(--background) 30%,transparent)); }.real-result figcaption { display: block; }.real-result figcaption span { display: block; margin-top: .25rem; text-align: left; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } .reveal { opacity:1; transform:none; transition:none; } .project img, .service-card, .service-card-image img, .real-result img { transition:none; } }
+.whatsapp-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 64px;
+  height: 64px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-float img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+}
+
+@media (max-width: 640px) {
+  .whatsapp-float {
+    right: 16px;
+    bottom: 16px;
+    width: 56px;
+    height: 56px;
+  }
+}
