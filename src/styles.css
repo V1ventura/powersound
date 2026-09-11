@@ -67,37 +67,39 @@ button, a { letter-spacing: 0; }
 @media (max-width:767px) { .section-shell { padding: 4.5rem 0; }.hero-image { object-position: 40% center; transform: scale(1.1); }.hero-shade { background: linear-gradient(0deg,var(--background),color-mix(in oklab,var(--background) 35%,transparent) 75%); }.soundwave { width: 80%; opacity: .12; }.scroll-cue { display:none; }.portfolio-grid { grid-auto-rows: 310px; }.about-images { min-height: 470px; }.about-images img:first-child { height: 400px; }.about-images img:last-child { height: 210px; }.compare-after img { width: 100vw; }.feature-band>img { object-position: 62% center; }.feature-shade { background: linear-gradient(0deg,var(--background) 2%,color-mix(in oklab,var(--background) 78%,transparent) 60%,color-mix(in oklab,var(--background) 30%,transparent)); }.real-result figcaption { display: block; }.real-result figcaption span { display: block; margin-top: .25rem; text-align: left; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } .reveal { opacity:1; transform:none; transition:none; } .project img, .service-card, .service-card-image img, .real-result img { transition:none; } }
 .whatsapp-float {
-  position: fixed;
-  right: 120px;  /* 50px mais para a esquerda */
-  bottom: 350px; /* 50px mais para cima */
-  width: 58px;
-  height: 58px;
-  z-index: 9999;
-  display: block;
-  line-height: 0;
+  position: fixed !important;
+  right: 120px !important;
+  bottom: 350px !important;
+  width: 58px !important;
+  height: 58px !important;
+  z-index: 99999 !important;
+  display: block !important;
+  line-height: 0 !important;
 }
 
 .whatsapp-float img {
-  width: 58px;
-  height: 58px;
-  object-fit: contain;
-  display: block;
+  width: 58px !important;
+  height: 58px !important;
+  object-fit: contain !important;
+  display: block !important;
 }
 
 .whatsapp-float:hover {
-  transform: scale(1.08);
+  transform: scale(1.08) !important;
 }
 
 @media (max-width: 640px) {
   .whatsapp-float {
-    right: 78px;
-    bottom: 400px;
-    width: 52px;
-    height: 52px;
+    position: fixed !important;
+    right: 120px !important;
+    bottom: 350px !important;
+    width: 52px !important;
+    height: 52px !important;
+    z-index: 99999 !important;
   }
 
   .whatsapp-float img {
-    width: 52px;
-    height: 52px;
+    width: 52px !important;
+    height: 52px !important;
   }
 }
