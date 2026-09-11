@@ -68,8 +68,8 @@ button, a { letter-spacing: 0; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } .reveal { opacity:1; transform:none; transition:none; } .project img, .service-card, .service-card-image img, .real-result img { transition:none; } }
 .whatsapp-float {
   position: fixed;
-  right: 24px;
-  bottom: 24px;
+  right: 74px;  /* 50px mais para a esquerda */
+  bottom: 74px; /* 50px mais para cima */
   width: 58px;
   height: 58px;
   z-index: 9999;
