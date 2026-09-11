@@ -68,8 +68,8 @@ button, a { letter-spacing: 0; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } .reveal { opacity:1; transform:none; transition:none; } .project img, .service-card, .service-card-image img, .real-result img { transition:none; } }
 .whatsapp-float {
   position: fixed !important;
-  right: 120px !important;
-  bottom: 350px !important;
+  right: 78px !important;
+  bottom: 150px !important;
   width: 58px !important;
   height: 58px !important;
   z-index: 99999 !important;
@@ -91,8 +91,8 @@ button, a { letter-spacing: 0; }
 @media (max-width: 640px) {
   .whatsapp-float {
     position: fixed !important;
-    right: 120px !important;
-    bottom: 350px !important;
+    right: 38px !important;
+    bottom: 78px !important;
     width: 52px !important;
     height: 52px !important;
     z-index: 99999 !important;
