@@ -20,7 +20,8 @@ import {
   Zap,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import redCar from "@/assets/powersound-red-car.png.asset.json";
+import telaInicial from "@/assets/Tela inicial site.jpeg";
+import whatsappIcon from "@/assets/whatsapp.png";
 import storeSuv from "@/assets/powersound-store-suv.png.asset.json";
 import vwDetail from "@/assets/powersound-vw-detail.png.asset.json";
 import logo from "@/assets/powersound-logo.png.asset.json";
