@@ -21,6 +21,7 @@ import vitrificacao from "@/assets/Vitrificacao.png";
 import farolAntes from "@/assets/recuperacaodefarol.jpeg";
 import farolDepois from "@/assets/recuperacaofarol depois.jpeg";
 import farolResultado from "@/assets/recuperacaofarol resultado .jpeg";
+import whatsapp from "@/assets/whatsapp.png";
 
 const WHATSAPP = "https://wa.me/551132971139?text=Olá%20PowerSound!%20Gostaria%20de%20agendar%20um%20serviço.";
 
@@ -101,6 +102,16 @@ function Index() {
       <section id="sobre" className="section-shell bg-surface"><div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-2 lg:items-center lg:px-8"><div className="about-images reveal"><img src={storeSuv.url} loading="lazy" alt="Fachada da PowerSound"/><img src={complemento} loading="lazy" alt="Detalhe de serviço PowerSound"/></div><div className="reveal"><SectionTitle eyebrow="NOSSA HISTÓRIA">PAIXÃO POR CARROS. <span>COMPROMISSO COM RESULTADOS.</span></SectionTitle><div className="mt-7 space-y-4 text-muted-foreground"><p>A PowerSound nasceu da paixão por automóveis e da certeza de que cada veículo pode expressar ainda mais personalidade.</p><p>Unimos experiência, atenção genuína e soluções sob medida para entregar som, estética e acessórios com um padrão de acabamento que se percebe nos detalhes.</p></div><div className="mt-8 flex items-center gap-4 border-l-2 border-primary pl-5"><Zap className="text-primary"/><p className="font-display text-lg font-bold">POTÊNCIA NO SOM.<br/>PRECISÃO NO ACABAMENTO.</p></div></div></div></section>
       <section id="contato" className="cta-final"><div className="soundwave bottom-wave" aria-hidden="true">{Array.from({length:40}).map((_,i)=><span key={i} style={{height:`${10+((i*23)%78)}%`}}/>)}</div><div className="relative z-10 mx-auto max-w-5xl px-5 text-center"><p className="section-kicker">O PRÓXIMO NÍVEL COMEÇA AQUI</p><h2>PRONTO PARA TRANSFORMAR <span>SEU CARRO?</span></h2><p>Agende seu atendimento e descubra o padrão PowerSound.</p><Button asChild variant="power" size="hero" className="mt-8"><a href={WHATSAPP} target="_blank" rel="noreferrer"><MessageCircle/> AGENDAR PELO WHATSAPP</a></Button><small>Resposta rápida <b>•</b> Atendimento personalizado</small></div></section>
       <footer className="border-t border-border bg-background"><div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 md:grid-cols-3 lg:px-8"><div><img src={logo.url} alt="PowerSound Som e Acessórios" className="h-12 w-auto max-w-[240px] object-contain object-left"/><p className="mt-4 max-w-xs text-sm text-muted-foreground">Som, acessórios, estética e personalização automotiva com alto padrão.</p></div><div><p className="footer-heading">NAVEGAÇÃO</p><div className="mt-4 grid grid-cols-2 gap-3">{nav.map(([label,href])=><a key={href} href={href} className="text-sm text-muted-foreground hover:text-foreground">{label}</a>)}</div></div><div><p className="footer-heading">FALE CONOSCO</p><div className="mt-4 space-y-2 text-sm text-muted-foreground"><p>WhatsApp: (11) 3297-1139</p><p>Loja nº 990 • São Paulo, SP</p><div className="flex gap-3 pt-3"><a href="https://www.instagram.com/powersoundoficial/" target="_blank" rel="noreferrer" aria-label="Instagram"><Instagram/></a><a href={WHATSAPP} target="_blank" rel="noreferrer" aria-label="WhatsApp"><MessageCircle/></a></div></div></div></div><div className="border-t border-border px-5 py-5 text-center text-xs text-muted-foreground">© 2026 POWERSOUND — SOM E ACESSÓRIOS. TODOS OS DIREITOS RESERVADOS.</div></footer>
+
+      <a
+  href="https://wa.me/551132971139?text=Olá%20PowerSound!%20Gostaria%20de%20agendar%20um%20serviço."
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Falar com a PowerSound pelo WhatsApp"
+  className="whatsapp-float"
+>
+  <img src={whatsapp} alt="" />
+</a>
     </main>
   );
 }
