@@ -4,7 +4,7 @@ import {
   ArrowDownRight, ArrowRight, Award, CarFront, Check, ChevronLeft, ChevronRight, Gauge, Instagram, Menu, MessageCircle, ShieldCheck, Sparkles, Star, Wrench, X, Zap,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import telaInicial from "@/assets/Tela inicial site.jpeg";
+import telaInicial from "@/assets/Tela inicial site.png";
 import storeSuv from "@/assets/powersound-store-suv.png.asset.json";
 import logo from "@/assets/powersound-logo.png.asset.json";
 import envelopamento1 from "@/assets/Envelopamento 1.jpg";
